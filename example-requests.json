@@ -1,0 +1,54 @@
+{
+  "learningPathGeneration": {
+    "flexibleBasicRequest": {
+      "interests": ["OpenShift", "Kubernetes", "Container orchestration"],
+      "experience": "2 years in system administration, new to containers",
+      "goals": ["Deploy applications in production", "Understand cloud-native architecture"],
+      "timeCommitment": "4-6 hours per week including weekends",
+      "preferredLearningStyle": "Hands-on labs with real projects"
+    },
+    "detailedPersonalizedRequest": {
+      "interests": ["Ansible automation", "Infrastructure as Code", "DevOps practices", "CI/CD pipelines"],
+      "experience": "Junior developer with 1 year experience, familiar with Linux basics",
+      "goals": ["Automate deployment processes", "Reduce manual configuration errors", "Get RHCE certified within 6 months", "Lead automation initiatives at work"],
+      "timeCommitment": "Intensive study - 15-20 hours per week for next 3 months",
+      "preferredLearningStyle": "Mix of video tutorials and hands-on practice, prefer learning by solving real problems",
+      "currentRole": "Junior DevOps Engineer",
+      "industryFocus": "E-commerce startup",
+      "certificationGoals": ["RHCSA first, then RHCE", "Ansible specialist certification"],
+      "additionalContext": "Working in a fast-growing startup where we need to scale infrastructure quickly. Currently everything is manual and error-prone. Team of 3 developers, need to implement proper automation and CI/CD."
+    },
+    "careerTransitionRequest": {
+      "interests": ["Cloud computing", "Red Hat OpenShift", "Enterprise Linux", "Security best practices"],
+      "experience": "10 years as Windows system admin, complete beginner with Linux and containers",
+      "goals": ["Career transition to Linux/cloud administration", "Become proficient in Red Hat technologies", "Get hired as a Red Hat specialist"],
+      "timeCommitment": "Full-time study for 6 months - treating this as a career investment",
+      "preferredLearningStyle": "Structured learning path with clear milestones, combination of theory and extensive hands-on practice",
+      "currentRole": "Windows System Administrator",
+      "industryFocus": "Healthcare IT",
+      "certificationGoals": ["RHCSA", "RHCE", "OpenShift Administrator"],
+      "additionalContext": "Making a major career pivot from Windows to Linux ecosystem. Have strong IT fundamentals but need to learn everything Red Hat from scratch. Looking for a comprehensive, step-by-step approach."
+    }
+  },
+  "contentSearch": {
+    "basicSearch": {
+      "topics": ["OpenShift", "containers"]
+    },
+    "specificSourceSearch": {
+      "topics": ["Ansible", "automation", "playbooks"],
+      "sources": ["tv", "training"]
+    },
+    "multiTopicSearch": {
+      "topics": ["RHEL", "security", "SELinux", "compliance"],
+      "sources": ["documentation", "training"]
+    }
+  },
+  "curlExamples": {
+    "generateLearningPath": "curl -X POST http://localhost:3000/api/learning-path/generate \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"interests\": [\"OpenShift\", \"Kubernetes\"],\n    \"experience\": \"beginner\",\n    \"goals\": [\"Learn container orchestration\"],\n    \"timeCommitment\": \"3-5 hours/week\",\n    \"preferredLearningStyle\": \"hands-on\"\n  }'",
+    "searchContent": "curl -X POST http://localhost:3000/api/learning-path/search \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"topics\": [\"Ansible\", \"automation\"],\n    \"sources\": [\"tv\", \"training\"]\n  }'",
+    "getTopics": "curl -X GET http://localhost:3000/api/learning-path/topics",
+    "testOllama": "curl -X GET http://localhost:3000/api/learning-path/test-ollama",
+    "getStatus": "curl -X GET http://localhost:3000/api/learning-path/status",
+    "healthCheck": "curl -X GET http://localhost:3000/health"
+  }
+}
